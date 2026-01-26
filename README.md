@@ -147,4 +147,5 @@ Para rodar este projeto localmente, certifique-se de ter o [Node.js](https://nod
 2. **Executar:**
 
     Interface Visual: `npx cypress open`
+    
     Modo Terminal: `npx cypress run`
