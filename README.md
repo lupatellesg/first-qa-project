@@ -140,10 +140,10 @@ Para rodar este projeto localmente, certifique-se de ter o [Node.js](https://nod
 
 1. **Clonar e instalar:**
    ```bash
-   git clone [https://github.com/lupatellesg/first-qa-project.git](https://github.com/lupatellesg/first-qa-project.git)
+   git clone https://github.com/lupatellesg/first-qa-project.git
    cd first-qa-project
    npm install
-
+    ```
    **Executar:**
 
     Interface Visual: npx cypress open
