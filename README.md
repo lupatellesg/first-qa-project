@@ -144,8 +144,7 @@ Para rodar este projeto localmente, certifique-se de ter o [Node.js](https://nod
    cd first-qa-project
    npm install
     ```
-   **Executar:**
+2. **Executar:**
 
-    Interface Visual: npx cypress open
-
-    Modo Terminal: npx cypress run
+    Interface Visual: `npx cypress open`
+    Modo Terminal: `npx cypress run`
