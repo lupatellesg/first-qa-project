@@ -1,2 +1,139 @@
-# first-qa-project
-Estudo prático de QA: Plano de testes, escrita de casos de teste (BDD) e automação para o site https://www.saucedemo.com 
+# Automação de testes E2E - Site Sauce Demo. 
+
+Descrição:
+[cite_start]Este projeto visa validar todo o fluxo de compra de um e-commerce, garantindo a qualidade e a funcionalidade da aplicação **SauceDemo**[cite: 1, 2].
+
+
+## 📋 Casos de Teste
+
+[cite_start]Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento de carrinho e o fluxo completo de compra (E2E).
+
+---
+
+### 🧪 CT01 – Login com credenciais válidas
+
+- **Prioridade:** Altíssima  
+- **Pré-condições:**  
+  - Acesso à URL: https://www.saucedemo.com  
+  - Possuir credenciais do usuário `standard_user`
+
+#### Cenário
+- **Dado** que estou na tela de Login  
+- **Quando** digito usuário e senha corretos  
+- **E** clico no botão **Login**  
+- **Então** o sistema deve apresentar a tela principal  
+
+#### Resultado Esperado
+✅ O sistema deve liberar o acesso à aplicação.
+
+---
+
+### 🧪 CT02 – Login com credenciais inválidas
+
+- **Prioridade:** Alta  
+- **Pré-condições:**  
+  - Acesso à URL da aplicação  
+  - Usuário ou senha inválidos
+
+#### Cenário
+- **Dado** que estou na tela de Login  
+- **Quando** preencho usuário e senha inválidos  
+- **E** clico no botão **Login**  
+- **Então** o sistema deve exibir mensagem de erro  
+- **E** continuar na tela de login  
+
+#### Resultado Esperado
+❌ O sistema não deve permitir o login.
+
+---
+
+### 🧪 CT03 – Compra de produto com sucesso (E2E)
+
+- **Prioridade:** Altíssima  
+- **Pré-condições:**  
+  - Estar logado no sistema  
+  - Produtos disponíveis em estoque  
+- **Massa de Dados:** `standard_user`
+
+#### Cenário
+- **Dado** que estou logado na página de produtos  
+- **Quando** adiciono o item **"Sauce Labs Bike Light"** ao carrinho  
+- **E** sigo para o checkout preenchendo as informações de envio  
+- **E** clico no botão **Finish**  
+- **Então** devo visualizar a mensagem  
+  > *"Thank you for your order!"*
+
+#### Resultado Esperado
+✅ O pedido deve ser finalizado e o sistema deve exibir a tela **"Checkout: Complete!"**.
+
+---
+
+### 🧪 CT04 – Checkout com campos obrigatórios vazios
+
+- **Prioridade:** Média  
+- **Pré-condições:**  
+  - Ter um item no carrinho  
+  - Estar na página **"Checkout: Your Information"**
+
+#### Cenário
+- **Dado** que estou na tela de informações do Checkout  
+- **Quando** deixo os campos **First Name**, **Last Name** e **Zip Code** vazios  
+- **E** clico no botão **Continue**  
+- **Então** o sistema deve exibir uma mensagem de erro  
+- **E** o fluxo de compra não deve avançar  
+
+#### Resultado Esperado
+⚠️ O sistema deve validar a obrigatoriedade dos campos e bloquear a finalização.
+
+---
+
+### 🧪 CT05 – Remoção de item do carrinho
+
+- **Prioridade:** Média  
+- **Pré-condições:**  
+  - Ter pelo menos um item adicionado ao carrinho  
+  - Estar na página **"Your Cart"**
+
+#### Cenário
+- **Dado** que possuo um item adicionado ao carrinho  
+- **Quando** clico no botão **Remove**  
+- **Então** o item deve ser removido da listagem  
+
+#### Resultado Esperado
+🛒 O carrinho deve ser atualizado e o produto não deve mais estar visível.
+
+---
+
+### 🧪 CT06 – Login com usuário bloqueado
+
+- **Prioridade:** Alta  
+- **Pré-condições:**  
+  - Acesso à tela de Login da aplicação
+
+#### Cenário
+- **Dado** que estou na tela de Login  
+- **Quando** informo as credenciais do usuário `locked_out_user`  
+- **E** clico no botão **Login**  
+- **Então** o sistema deve exibir mensagem de usuário bloqueado  
+- **E** negar o acesso à aplicação  
+
+#### Resultado Esperado
+🚫 Acesso negado ao usuário bloqueado.
+
+---
+
+### 📌 Observações
+
+- Casos de teste escritos em **BDD (Gherkin)**
+- Cobertura dos principais fluxos funcionais da aplicação
+- Detalhamento de escopo e estratégia disponível no **[Plano de Testes (PDF)](./docs/Plano-de-Testes.pdf)**
+
+### Tecnologias Utilizadas:
+
+- Cypress
+- JS
+- Node.js
+
+Como Executar os Testes:
+
+Utilize o comando npx cypress open
