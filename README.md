@@ -1,12 +1,12 @@
 # Automação de testes E2E - Site Sauce Demo. 
 
 Descrição:
-[cite_start]Este projeto visa validar todo o fluxo de compra de um e-commerce, garantindo a qualidade e a funcionalidade da aplicação **SauceDemo**[cite: 1, 2].
+Este projeto visa validar todo o fluxo de compra de um e-commerce, garantindo a qualidade e a funcionalidade da aplicação **SauceDemo**.
 
 
 ## 📋 Casos de Teste
 
-[cite_start]Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento de carrinho e o fluxo completo de compra (E2E).
+Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento de carrinho e o fluxo completo de compra (E2E).
 
 ---
 
