@@ -134,6 +134,18 @@ Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento
 - JS
 - Node.js
 
-Como Executar os Testes:
+## 🚀 Como Executar os Testes
 
-Utilize o comando npx cypress open
+Para rodar este projeto localmente, certifique-se de ter o [Node.js](https://nodejs.org/) instalado. 
+
+1. **Clonar e instalar:**
+   ```bash
+   git clone [https://github.com/lupatellesg/first-qa-project.git](https://github.com/lupatellesg/first-qa-project.git)
+   cd first-qa-project
+   npm install
+
+   **Executar:**
+
+    Interface Visual: npx cypress open
+
+    Modo Terminal: npx cypress run
