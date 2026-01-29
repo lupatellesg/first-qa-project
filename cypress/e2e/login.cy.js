@@ -1,11 +1,11 @@
+//Lembrar de arrumar a "Massa de dados" no GH e tbm o plano de testes com página fantasma
+
 //CT-01
 describe('Testes de Login', () => {
   beforeEach(() => { cy.visit('https://www.saucedemo.com') })
   it('Acesse o site Sauce Demo e faça Login com credenciais válidas', () => {
-    cy.get('[data-test="username"]')
-      .type('standard_user')
-    cy.get('[data-test="password"]')
-      .type('secret_sauce')
+    cy.get('[data-test="username"]').type('standard_user')
+    cy.get('[data-test="password"]').type('secret_sauce')
     cy.get('[data-test="login-button"]').click()
 
     cy.url().should('include', '/inventory.html')
