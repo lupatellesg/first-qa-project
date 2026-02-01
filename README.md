@@ -39,7 +39,8 @@ Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento
 - **Dado** que estou na tela de Login  
 - **Quando** preencho usuário e senha inválidos  
 - **E** clico no botão **Login**  
-- **Então** o sistema deve exibir mensagem de erro > *"Epic sadface: Username and password do not match any user in this service"*
+- **Então** o sistema deve exibir mensagem de erro 
+> *"Epic sadface: Username and password do not match any user in this service"*
 - **E** continuar na tela de login  
 
 #### Resultado Esperado
