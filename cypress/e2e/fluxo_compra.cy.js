@@ -36,7 +36,7 @@ describe('Testes do fluxo de compra', () => {
 
 
     //CT-05
-    it.only('Remoção de item do carrinho', () => {
+    it('Remoção de item do carrinho', () => {
         cy.url().should('eq', 'https://www.saucedemo.com/inventory.html')
         cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
         cy.get('[data-test="shopping-cart-link"]').click()

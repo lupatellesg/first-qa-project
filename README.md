@@ -15,7 +15,7 @@ Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento
 - **Prioridade:** Altíssima  
 - **Pré-condições:**  
   - Acesso à URL: https://www.saucedemo.com  
-  - Possuir credenciais do usuário `standard_user`
+  - Massa de Dados: Usuário `standard_user` e Senha `secret_sauce`
 
 #### Cenário
 - **Dado** que estou na tela de Login  
@@ -51,9 +51,11 @@ Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento
 
 - **Prioridade:** Altíssima  
 - **Pré-condições:**  
-  - Estar logado no sistema  
+  - Estar logado com `standard_user`
   - Produtos disponíveis em estoque  
-- **Massa de Dados:** `standard_user`
+- **Massa de Dados:** 
+  - Produto: **Sauce Labs Bike Light**
+  - Checkout: Nome, Sobrenome e CEP genéricos.
 
 #### Cenário
 - **Dado** que estou logado na página de produtos  
@@ -72,7 +74,7 @@ Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento
 
 - **Prioridade:** Média  
 - **Pré-condições:**  
-  - Ter um item no carrinho  
+  - Estar logado com `standard_user` e com um item no carrinho  
   - Estar na página **"Checkout: Your Information"**
 
 #### Cenário
@@ -90,7 +92,8 @@ Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento
 ### 🧪 CT05 – Remoção de item do carrinho
 
 - **Prioridade:** Média  
-- **Pré-condições:**  
+- **Pré-condições:**
+  - Estar logado com `standard_user`
   - Ter pelo menos um item adicionado ao carrinho  
   - Estar na página **"Your Cart"**
 
@@ -107,8 +110,11 @@ Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento
 ### 🧪 CT06 – Login com usuário bloqueado
 
 - **Prioridade:** Alta  
-- **Pré-condições:**  
+- **Pré-condições:** 
   - Acesso à tela de Login da aplicação
+  Massa de Dados:
+  - Usuário: `locked_out_user`
+  - Senha: `secret_sauce`
 
 #### Cenário
 - **Dado** que estou na tela de Login  
