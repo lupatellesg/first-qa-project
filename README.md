@@ -3,6 +3,19 @@
 Descrição:
 Este projeto visa validar todo o fluxo de compra de um e-commerce, garantindo a qualidade e a funcionalidade da aplicação **SauceDemo**.
 
+## 🎥 Demonstração dos Testes
+
+Abaixo se encontra a execução dos testes automatizados do fluxo de compra, garantindo a integridade do carrinho e do checkout:
+
+![Execução do Fluxo de Compra](./docs/testes.gif)
+
+## 📊 Status da Automação
+Atualmente, a suíte de testes cobre os principais fluxos de negócio:
+
+| Suíte de Testes | Quantidade | Foco Principal |
+| :--- | :---: | :--- |
+| `login.cy.js` | CT01, CT02 e CT06 | Validação de acesso e mensagens de erro |
+| `fluxo_compra.cy.js` | CT03, CT04 e CT05 | Jornada completa de compra e checkout |
 
 ## 📋 Casos de Teste
 

@@ -1,5 +1,3 @@
-//Lembrar de arrumar a "Massa de dados" no GH e tbm o plano de testes com página fantasma
-
 //CT-01
 describe('Testes de Login', () => {
   beforeEach(() => { cy.visit('https://www.saucedemo.com') })
@@ -13,7 +11,7 @@ describe('Testes de Login', () => {
 
 
   //CT-02
-  it.only('Faça Login com dados inválidos', () => {
+  it('Faça Login com dados inválidos', () => {
     cy.get('[data-test="username"]').type('random_user')
     cy.get('[data-test="password"]').type('random_password')
     cy.get('[data-test="login-button"]').click()
