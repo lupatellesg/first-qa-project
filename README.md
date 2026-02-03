@@ -23,7 +23,7 @@ Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento
 
 ---
 
-### 🧪 CT01 – Login com credenciais válidas
+### CT01 – Login com credenciais válidas
 
 - **Prioridade:** Altíssima  
 - **Pré-condições:**  
@@ -41,7 +41,7 @@ Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento
 
 ---
 
-### 🧪 CT02 – Login com credenciais inválidas
+### CT02 – Login com credenciais inválidas
 
 - **Prioridade:** Alta  
 - **Pré-condições:**  
@@ -61,7 +61,7 @@ Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento
 
 ---
 
-### 🧪 CT03 – Compra de produto com sucesso (E2E)
+### CT03 – Compra de produto com sucesso (E2E)
 
 - **Prioridade:** Altíssima  
 - **Pré-condições:**  
@@ -84,7 +84,7 @@ Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento
 
 ---
 
-### 🧪 CT04 – Checkout com campos obrigatórios vazios
+### CT04 – Checkout com campos obrigatórios vazios
 
 - **Prioridade:** Média  
 - **Pré-condições:**  
@@ -103,7 +103,7 @@ Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento
 
 ---
 
-### 🧪 CT05 – Remoção de item do carrinho
+### CT05 – Remoção de item do carrinho
 
 - **Prioridade:** Média  
 - **Pré-condições:**
@@ -121,7 +121,7 @@ Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento
 
 ---
 
-### 🧪 CT06 – Login com usuário bloqueado
+### CT06 – Login com usuário bloqueado
 
 - **Prioridade:** Alta  
 - **Pré-condições:** 
