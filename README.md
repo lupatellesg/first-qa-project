@@ -146,7 +146,7 @@ Abaixo estão detalhados os cenários funcionais que cobrem login, gerenciamento
 
 - Casos de teste escritos em **BDD (Gherkin)**
 - Cobertura dos principais fluxos funcionais da aplicação
-- Detalhamento de escopo e estratégia disponível no **[Plano de Testes (PDF)](./docs/Plano-de-Testes-SauceDemo-Project.pdf)**
+- Detalhamento de escopo e estratégia disponível no **[Plano de Testes (PDF)](./docs/Plano-de-Testes.pdf)**
 
 ### Tecnologias Utilizadas:
 
